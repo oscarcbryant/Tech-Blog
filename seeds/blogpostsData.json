@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Why MVC is so important",
+        "description": "MVC is critical because...",
+    },
+    {
+        "name": "Authentification vs. Authorization",
+        "description": "There is a difference between...",
+    },
+    {
+        "name": "Object-Relational Mapping",
+        "description": "I have really loved learning about...",
+    }
+]
