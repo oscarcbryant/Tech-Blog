@@ -81,19 +81,13 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/signup', (req, res) => {
+router.get('/signup', async (req, res) => {
+if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+}
 
-        const userData = await User(req.session.user_id, {
-            include: [['username', 'email', 'password']]
-        
-        });
-
-    res.render('/signup', {
-        ...user,
-
-    }) catch (err) {
-      res.status(500).json(err);
-    
-)};
+res.render('signup');
+});
 
 module.exports = router;
