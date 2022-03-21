@@ -82,7 +82,18 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/signup', (req, res) => {
+
+        const userData = await User(req.session.user_id, {
+            include: [['username', 'email', 'password']]
+        
+        });
+
+    res.render('/signup', {
+        ...user,
+
+    }) catch (err) {
+      res.status(500).json(err);
     
-})
+)};
 
 module.exports = router;
