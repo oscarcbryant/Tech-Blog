@@ -1,18 +1,18 @@
 [
     {
-      "name": "oscar",
+      "username": "oscar",
       "email": "oscar@hotmail.com",
-      "password": "password12345"
+      "password": "password"
     },
     {
-      "name": "penny",
+      "username": "penny",
       "email": "penny@gmail.com",
-      "password": "password12345"
+      "password": "password"
     },
     {
-      "name": "george",
+      "username": "george",
       "email": "george@aol.com",
-      "password": "password12345"
+      "password": "password"
     }
   ]
   
