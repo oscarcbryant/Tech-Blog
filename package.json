@@ -1,7 +1,8 @@
 {
     "scripts": {
         "start": "node server.js",
-        "seed": "node seeds/seed.js"
+        "seed": "node seeds/seed.js",
+        "watch": "nodemon server.js"
     },
     "name": "tech-blog",
     "description": "",
@@ -28,5 +29,8 @@
         "mysql2": "^2.3.3",
         "path": "^0.12.7",
         "sequelize": "^6.17.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
     }
 }
